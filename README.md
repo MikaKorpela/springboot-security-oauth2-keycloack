@@ -4,7 +4,7 @@ This repository contains a Spring Boot application that demonstrates how to secu
 
 ## Application Overview ##
 
-This application has three end-points implemented in DucksController. Each end-point shall return a string.
+This application has three end-points implemented in `DucksController`. Each end-point shall return a string.
 
 ```http request
 GET /api/duey
@@ -168,3 +168,9 @@ Following settings are needed for Postman to obtain an access token:
 - **Username**: `duey`
 - **Password**: `duck`
 - **Client Authentication**: `Send as Basic Auth header`
+
+## Testing ##
+
+1. Access end-points without access token; only `/api/luey` end-point is accessible.
+2. Get password credentials and access end-points; only  `/api/huey` and `/api/luey` end-points are accessible.
+3. Get client credentials and access end-points; all end-points are accessible.
